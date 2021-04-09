@@ -1,0 +1,77 @@
+/* Hero-section */
+header {
+  height: 16vh;
+}
+.hero-section {
+  height: 72vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-image: url(../../images/laptop-4906312_1280.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-section:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background: radial-gradient(rgb(122, 107, 65) 30%, rgba(165, 158, 62, 0.39)); */
+  mix-blend-mode: overlay;
+}
+
+.hero-items {
+  width: var(--width);
+  text-align: center;
+  transform: translateY(-5%);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-content {
+  width: calc(var(--width) - 20%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.hero-content h3 {
+  font-size: calc(var(--primary-size) + 40px);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.hero-content h2 {
+  font-size: calc(var(--primary-size) + 60px);
+  font-weight: 800;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+}
+
+.hero-content h2 span {
+  color: var(--secondary-color);
+}
+
+.hero-content p {
+  font-size: calc(var(--primary-size) + 7px);
+  padding: 0px 0px 1rem 0px;
+  width: calc(var(--width) - 20%);
+  letter-spacing: 1px;
+  margin: auto;
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 50%,
+    var(--secondary-color)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* filter: drop-shadow(0.5px 0.5px 0.5px #000); */
+}

@@ -1,0 +1,129 @@
+/* categories */
+.intro-section {
+  /* background-image: url(../images/pexels-cottonbro.jpg); */
+  /* background-position: center center; */
+  margin-top: 6vh;
+  height: 10vh;
+  background-color: #f1f3f4;
+}
+.intro-section h2 {
+  font-size: calc(var(--primary-size) + 5px);
+  color: var(--nav-secondary-color);
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0px;
+}
+.section-title {
+  margin: 2rem 0px;
+  width: calc(var(--width) - 40%);
+}
+.section-title .pre-heading {
+  font-size: calc(var(--primary-size) + 6px);
+  font-weight: 500;
+}
+.section-title .heading {
+  font-size: calc(var(--primary-size) + 20px);
+  font-weight: 660;
+  padding: 5px 0px;
+}
+.section-content {
+  width: var(--width);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.section-content .job-card {
+  height: 25vh;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.section-content .job-card .job-title,
+.section-content .job-card button {
+  font-size: calc(var(--primary-size) - 2px);
+  font-weight: 550;
+  padding-top: 1rem;
+}
+
+.section-content .job-card i {
+  font-size: calc(var(--primary-size) + 12px);
+  height: 4rem;
+  width: 4rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: inset var(--hover-box-shadow);
+  /* color: var(--primary-color); */
+  /* color: var(--secondary-color); */
+  color: var(--icon-color);
+  transform: translateY(50%);
+}
+
+.section-content .job-card .job-title {
+  transform: translateY(90%);
+}
+
+.section-content .job-card .position {
+  font-size: calc(var(--primary-size) - 4px);
+  font-weight: normal;
+  color: var(--primary-color);
+  padding: 1rem 0px;
+  transform: translateY(70%);
+}
+
+.section-content .job-card button {
+  border: none;
+  outline: none;
+  /* background-color: var(--primary-color); */
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  height: 3rem;
+  padding: 12px 14px;
+  color: #fff;
+  cursor: pointer;
+  transform: translateY(200%);
+}
+
+/* hover */
+.section-content .job-card:hover {
+  box-shadow: var(--hover-box-shadow);
+  transition: 0.2s ease;
+}
+.section-content .job-card:hover i {
+  transform: translateY(-200%);
+  transition: 0.5s ease;
+}
+.section-content .job-card:hover .job-title {
+  transition: 0.6s ease;
+  transform: translateY(-80%);
+}
+.section-content .job-card:hover .position {
+  transition: 0.6s ease;
+  transform: translateY(-75%);
+}
+.section-content .job-card:hover button {
+  transition: 0.6s ease;
+  transform: translateY(-80%);
+}
+.section-content .job-card button:hover {
+  box-shadow: var(--hover-box-shadow);
+  transition: box-shadow 0.2s ease;
+}
+.section-content .job-card button:active {
+  box-shadow: none;
+}

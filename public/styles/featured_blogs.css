@@ -1,0 +1,117 @@
+.featured-tenders {
+  width: calc(var(--width) - 5%);
+  margin: 4rem auto;
+}
+
+.featured-tenders h1 {
+  font-weight: 600;
+  font-size: calc(var(--primary-size) + 4px);
+  /* text-transform: capitalize; */
+  margin-bottom: 2rem;
+}
+
+.featured-tenders h1 .cat {
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+.featured-tenders .tender {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  place-items: center;
+  height: 18vh;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.featured-tenders .tender:hover {
+  box-shadow: var(--hover-box-shadow);
+  border-left: 3.5px solid var(--primary-color);
+  transition: 0.3s ease;
+}
+
+.featured-tenders .tender .company-logo {
+  height: 70%;
+  max-height: 100px;
+  width: 80%;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  box-shadow: var(--box-shadow);
+  user-select: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.featured-tenders .tender .company-logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.featured-tenders .tender .short-details {
+  justify-self: start;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+.featured-tenders .tender .short-details h3 {
+  font-weight: 550;
+  font-size: calc(var(--primary-size) + 2px);
+  text-transform: capitalize;
+}
+
+.featured-tenders .tender .short-details h4 {
+  font-weight: 500;
+  font-size: calc(var(--primary-size) - 2px);
+  color: #333;
+  padding: 0.2rem 0px;
+}
+
+.featured-tenders .tender .short-details h4 span {
+  text-transform: capitalize;
+}
+
+.featured-tenders .tender .short-details h4 .post-date {
+  color: #000;
+}
+.featured-tenders .tender .short-details h4 .owner {
+  color: var(--primary-color);
+}
+
+.featured-tenders .tender .short-details .blog-category {
+  font-weight: 600;
+  font-size: var(--primary-size);
+  color: var(--primary-color);
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.featured-tenders .tender .short-details .blog-category:hover {
+  color: #000ff0;
+}
+
+.featured-tenders .tender button {
+  height: 2.8rem;
+  width: calc(var(--width) - 10%);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background: var(--primary-color);
+  color: white;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  font-weight: 550;
+}
+
+.featured-tenders .tender button:hover {
+  box-shadow: var(--hover-box-shadow);
+}
